@@ -1,0 +1,38 @@
+{% block content %}
+{% load static %}
+<div id="donaciones">
+    <h2>Donaciones</h2>
+    <marquee behavior="scroll" direction="left" scrollamount="6"  style="font-size: 24px;">
+        </h5>5% de descuento en el total de la venta a todos los clientes que estén suscritos.
+        </h5>
+        </marquee>
+    
+
+</div>
+{% include './navbar.html' %} 
+<!-- Modal -->
+<div class="modal fade" id="orgModal" tabindex="-1" aria-labelledby="orgModalLabel" aria-hidden="true">
+    <div class="modal-body">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orgModalLabel">Nuevo Título del Modal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Aquí puedes agregar el nuevo contenido del modal -->
+                <p>Descripción actualizada de la fundación.</p>
+                <p>¡Gracias por tu apoyo!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- _____________________________________________________-->
+
+
+
+{% endblock %}

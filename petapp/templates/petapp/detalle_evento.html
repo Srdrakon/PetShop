@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ evento.nombre }}</title>
+</head>
+<body>
+    <h1>{{ evento.nombre }}</h1>
+    <p>Fecha: {{ evento.fecha }}</p>
+    <p>Ubicación: {{ evento.ubicacion }}</p>
+    <p>{{ evento.descripcion }}</p>
+    <a href="{% url 'eventos' %}">Volver a Eventos</a>
+</body>
+</html>

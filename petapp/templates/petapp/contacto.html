@@ -1,0 +1,68 @@
+
+{% block content %}
+
+{% block title %}<H2>Contacto</H2>{% endblock %}
+
+
+{% include './navbar.html' %} 
+
+
+
+<main>
+    <h1>¡Estamos aquí para ayudarte!</h1>
+    <div class="container">
+        <form class="form-horizontal" id="contactForm">
+            <h4>Pon tus datos y te contactaremos</h4>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Nombre:</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="name" placeholder="Introduzca su nombre" name="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="lastname">Apellidos:</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="lastname" placeholder="Introduzca sus apellidos" name="lastname">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="number">Teléfono:</label>
+                <div class="col-sm-5">
+                    <input type="tel" class="form-control" id="number" placeholder="+56 9" name="number">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-5">
+                    <input type="email" class="form-control" id="email" placeholder="Introduzca su email" name="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="direccion">Dirección:</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="direccion" placeholder="Duoc UC - Sede Padre Alonso de Ovalle" name="direccion">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="verificacion"> Acepto los términos y condiciones.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="button" class="btn btn-default" onclick="enviarFormulario()">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <p></p>
+    <p>Si tienes alguna pregunta, comentario o sugerencia, no dudes en contactarnos por los siguientes métodos:</p>
+    <ul>
+        <li>Correo electrónico: <a href="mailto:info@mascotastore.com">info@mascotastore.com</a></li>
+        <li>Teléfono: +652 625 26 265</li>
+        <li>Visítanos en nuestra tienda física: Duoc UC - Sede Padre Alonso de Ovalle</li>
+    </ul>
+</main>
+{% endblock %}
