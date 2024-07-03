@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
-import os 
 
 from pathlib import Path
 
@@ -88,14 +87,10 @@ DATABASES = {
     }
 }
 
-# En settings.py
-# pet_shop/settings.py
-AUTH_USEr_MODEL = 'petapp.CustomUser'
 
 
 
-LOGIN_REDIRECT_URL = '/imdex'  # URL a la que se redirige después del login
-LOGOUT_REDIRECT_URL = '/l'  # URL a la que se redirige después del logout
+
 
 
 # Password validation
