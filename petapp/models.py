@@ -6,7 +6,20 @@ from django.contrib.auth.models import AbstractUser
 #########
 
 
+
+
+
+
+
+
 #########
+class Donacion(models.Model):
+    nombre = models.CharField(max_length=64)
+    email = models.EmailField(max_length=120)
+    cantidad = models.FloatField()
+
+    def __str__(self):
+        return self.nombre
 class Contacto(models.Model):
     nombre = models.CharField(max_length=100)
     apellidos = models.CharField(max_length=100)
