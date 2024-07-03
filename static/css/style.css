@@ -1,0 +1,182 @@
+/* Estilos generales */
+body {
+  background-color: #f7faf7; /* Cambio a un tono de verde pastel más suave */
+  color: #333; /* Negro suave para el texto */
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Carrusel */
+.carousel-inner {
+  border: 5px solid #cde8d1; /* Borde verde pastel */
+}
+
+.carousel-caption {
+  background-color: rgba(205, 232, 209, 0.9); /* Aumento de opacidad para mayor legibilidad */
+  color: #264d36; /* Texto verde más oscuro para mejor contraste */
+  text-align: center; /* Centra el texto */
+  padding: 20px; /* Ajuste del espaciado interno */
+}
+
+.carousel-caption p {
+  color: #444; /* Texto más oscuro */
+}
+
+.carousel-caption a.btn-primary {
+  background-color: #a2d4af; /* Botón verde pastel */
+  border: none;
+}
+
+.carousel-caption a.btn-primary:hover {
+  background-color: #8cbf99; /* Botón verde pastel al pasar el mouse */
+}
+
+/* Ajustes de imagen en el carrusel */
+.carousel-inner img {
+  max-width: 100%; /* Ajusta el tamaño máximo de las imágenes al contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+/* Ajustes de diseño para los controles del carrusel */
+.carousel-control-prev, .carousel-control-next {
+  background-color: rgba(205, 232, 209, 0.9); /* Fondo con transparencia */
+  width: 5%; /* Ancho ajustado para los controles */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #264d36; /* Color de flecha verde más oscuro */
+}
+
+/* Ajustes para el indicador de diapositivas */
+.carousel-indicators {
+  bottom: 20px; /* Ajuste la posición vertical */
+}
+
+/* Ajustes de tamaño para el carrusel en la página de inicio */
+#carouselExampleIndicators {
+  max-width: 100%; /* Establece el ancho máximo del carrusel */
+}
+
+/* Estilos para la sección Nosotros */
+body {
+  background-color: #f7faf7;
+  color: #333;
+  font-family: Arial, sans-serif;
+  padding-top: 50px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+p, h1 {
+  text-align: center;
+}
+footer {
+  background-color: #cde8d1;
+  padding: 20px 0;
+  text-align: center;
+  color: #333;
+}
+footer a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+}
+/* Estilo personalizado para los botones del submenú */
+#categorias .nav-link {
+  background-color: #FFFFFF;
+  border: 1px solid rgb(209,213,219);
+  border-radius: .5rem;
+  color: #111827;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s;
+  margin-right: 0.5rem; /* Espacio entre los botones */
+}
+
+#categorias .nav-link:hover {
+  background-color: #f9fafb;
+}
+
+#categorias .nav-link:focus {
+  outline: 2px solid rgba(0,0,0,0.1);
+  outline-offset: 2px;
+}
+
+#categorias .nav-link:focus-visible {
+  box-shadow: none;
+}
+#productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px;
+}
+
+.banner-descuento {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+#donaciones {
+  background-color: #fff; /* Fondo blanco */
+  padding: 20px; /* Relleno 20px */
+  margin: 20px auto; /* Centrado */
+  max-width: 800px; /* Ancho máx. */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  border-radius: 8px; /* Bordes redondos */
+}
+
+.banner-descuento {
+  background-color: #e0f7fa; /* Fondo azul */
+  padding: 10px; /* Relleno 10px */
+  border-radius: 5px; /* Bordes redondos */
+  text-align: center; /* Texto centrado */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+.banner-descuento p {
+  margin: 0; /* Sin margen */
+  font-size: 1.2em; /* Tamaño de fuente */
+  color: #00796b; /* Color de texto */
+}
+
+#galeria {
+  display: flex; /* Flexbox */
+  flex-wrap: wrap; /* Envoltura */
+  gap: 10px; /* Espacio */
+}
+
+.galeria-item {
+  flex: 1 1 calc(33.333% - 10px); /* Flexibilidad */
+  background-color: #e0e0e0; /* Fondo gris */
+  padding: 10px; /* Relleno 10px */
+  border-radius: 5px; /* Bordes redondos */
+  text-align: center; /* Texto centrado */
+}
