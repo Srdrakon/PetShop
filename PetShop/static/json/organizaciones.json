@@ -1,0 +1,24 @@
+{
+  "fundaciones": [
+    {
+      "nombreFundacion": "Fundacion Siete vidas poder felino",
+      "descripcionFundacion": "Rescatamos Gatos en situaciones difíciles y los preparamos para encontrar un nuevo hogar. ¿Listo para hacer una diferencia? Adopta a un gato rescatado y disfruta de su lealtad.",
+      "imagenFundacion": "siete_vidas.jpg"
+    },
+    {
+      "nombreFundacion": "Fundacion Callejeritos de la VEGA",
+      "descripcionFundacion": "Somos una organización comunitaria cuyo objetivo es lograr leyes de Protección Animal, educar para el buen trato y denunciar el maltrato y abandono animal. Realizamos un trabajo voluntario en la Vega Central ubicada en la comuna de Recoleta, no sólo por los animales sino también por las personas.",
+      "imagenFundacion": "callejeros_de_la_calle.jpg"
+    },
+    {
+      "nombreFundacion": "Fundacion adopta",
+      "descripcionFundacion": "Es una organización sin fines de lucro, dedicada al rescate, rehabilitación y reubicación de gatos abandonados. Realiza, operativos de esterilización y jornadas de adopción todas las semanas. Todos los gatos que entrega están esterilizados desde los dos meses de edad. Mantiene dos albergues de gatos y una red de hogares temporales, que acogen a los gatos rescatados en espera de su adopción definitiva.",
+      "imagenFundacion": "fundacion_adopta.jpg"
+    },
+    {
+      "nombreFundacion": "Fundacion Chile mestizo",
+      "descripcionFundacion": "Fundacion chile mestizo nace como el sueño de dar una segunda oportunidad a miles de perros y gatos que sufren abandono, hambre y enfermedades en las calles de nuestra ciudad, nace de la unión de personas con enormes ganas de construir el país en el que queremos vivir.",
+      "imagenFundacion": "chile_mestizos.jpg"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<div id="inicio">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="{% url 'contacto' %}">
+                    <img src="{% static 'media/contacto.png' %}" class="d-block w-100" alt="Contacto">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="{% url 'donaciones' %}">
+                    <img src="{% static 'media/donaciones.png' %}" class="d-block w-100" alt="Donaciones">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="{% url 'nosotros' %}">
+                    <img src="{% static 'media/nosotros.png' %}" class="d-block w-100" alt="Nosotros">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="{% url 'tienda' %}">
+                    <img src="{% static 'media/tienda.png' %}" class="d-block w-100" alt="Tienda">
+                </a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+</div>
+{% endblock %}

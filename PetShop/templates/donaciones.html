@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>Fundaciones</h2>
+    <div id="galeria" class="row">
+        {% for fundacion in donaciones %}
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="{{ fundacion.imagen.url }}" class="img-fluid card-img-top" alt="{{ fundacion.nombre }}" data-bs-toggle="modal" data-bs-target="#orgModal{{ forloop.counter }}">
+
+                <div class="card-body">
+                    <h5 class="card-title">{{ fundacion.nombre }}</h5>
+                    <button class="btn btn-primary subscribe-btn" data-bs-toggle="modal" data-bs-target="#orgModal{{ forloop.counter }}">Suscribirse</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="orgModal{{ forloop.counter }}" tabindex="-1" aria-labelledby="orgModalLabel{{ forloop.counter }}" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="orgModalLabel{{ forloop.counter }}">{{ fundacion.nombre }}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{{ fundacion.imagen.url }}" class="img-fluid" alt="{{ fundacion.nombre }}">
+                        <p>{{ fundacion.descripcion }}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

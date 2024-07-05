@@ -1,0 +1,359 @@
+/* Estilos generales */
+body {
+  background-color: #f7faf7;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Encabezado y navegación */
+.navbar {
+  background-color: #a2d4af;
+}
+
+.navbar-brand, .nav-link {
+  color: #264d36 !important;
+}
+
+.nav-link:hover {
+  background-color: #8cbf99;
+  border-radius: .25rem;
+}
+
+/* Carrusel */
+.carousel-inner {
+  border: 5px solid #cde8d1;
+}
+
+.carousel-caption {
+  background-color: rgba(205, 232, 209, 0.9);
+  color: #264d36;
+  text-align: center;
+  padding: 20px;
+}
+
+.carousel-caption p {
+  color: #444;
+}
+
+.carousel-caption a.btn-primary {
+  background-color: #a2d4af;
+  border: none;
+}
+
+.carousel-caption a.btn-primary:hover {
+  background-color: #8cbf99;
+}
+
+/* Ajustes de imagen en el carrusel */
+.carousel-inner img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajustes de diseño para los controles del carrusel */
+.carousel-control-prev, .carousel-control-next {
+  background-color: rgba(205, 232, 209, 0.9);
+  width: 5%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #264d36;
+}
+
+/* Ajustes para el indicador de diapositivas */
+.carousel-indicators {
+  bottom: 20px;
+}
+
+/* Ajustes de tamaño para el carrusel en la página de inicio */
+#carouselExampleIndicators {
+  max-width: 100%;
+}
+
+/* Contenido principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la sección Nosotros */
+h1, p {
+  text-align: center;
+}
+
+footer {
+  background-color: #cde8d1;
+  padding: 20px 0;
+  text-align: center;
+  color: #333;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Estilo personalizado para los botones del submenú */
+#categorias .nav-link {
+  background-color: #FFFFFF;
+  border: 1px solid rgb(209,213,219);
+  border-radius: .5rem;
+  color: #111827;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s;
+  margin-right: 0.5rem; /* Espacio entre los botones */
+}
+
+#categorias .nav-link:hover {
+  background-color: #f9fafb;
+}
+
+#categorias .nav-link:focus {
+  outline: 2px solid rgba(0,0,0,0.1);
+  outline-offset: 2px;
+}
+
+#categorias .nav-link:focus-visible {
+  box-shadow: none;
+}
+
+/* Estilos para las tarjetas de productos */
+#productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn-custom {
+  background-color: #a2d4af;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.btn-custom:hover {
+  background-color: #8cbf99;
+}
+
+/* Estilos para los popups de producto */
+.modal-content {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header, .modal-footer {
+  background-color: #f7faf7;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.modal-body p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.modal-body h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.modal-footer .btn-custom {
+  background-color: #a2d4af;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.modal-footer .btn-custom:hover {
+  background-color: #8cbf99;
+}
+
+/* Estilos para formularios */
+.form-control {
+  border-radius: 5px;
+}
+
+/* Estilos para botones */
+.btn-primary {
+  background-color: #a2d4af;
+  border-color: #a2d4af;
+}
+
+.btn-primary:hover {
+  background-color: #8cbf99;
+  border-color: #8cbf99;
+}
+
+/* Estilos para la tarjeta de autenticación */
+.card-auth {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card-auth .card-header {
+  background-color: #a2d4af;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-auth .card-body {
+  padding: 30px;
+}
+
+/* Estilos para el formulario */
+.form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.form-text {
+  color: #6c757d;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
+/* Estilos para el botón de enviar */
+.btn-primary {
+  background-color: #a2d4af;
+  border-color: #a2d4af;
+}
+
+.btn-primary:hover {
+  background-color: #8cbf99;
+  border-color: #8cbf99;
+}
+
+/* Alineación de las letras a la izquierda */
+.text-left {
+  text-align: left;
+}
+
+
+/* Ajustes adicionales para la navegación */
+.navbar-nav .nav-item {
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+  padding: 8px 15px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  color: #264d36;
+}
+
+/* Ajustes generales para tarjetas y modales */
+.card {
+  margin: 15px;
+  border: 1px solid #cde8d1;
+  border-radius: 10px;
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-header {
+  border-bottom: 1px solid #cde8d1;
+}
+
+.modal-footer {
+  border-top: 1px solid #cde8d1;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #a2d4af;
+  padding: 15px;
+  text-align: center;
+  color: #264d36;
+  border-top: 5px solid #8cbf99;
+}
+/* Estilos para la tarjeta de autenticación más grande */
+.bigger-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* Aumenta el radio del borde si lo deseas */
+}
+
+.bigger-card .card-header {
+  background-color: #a2d4af;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px; /* Aumenta el padding superior e inferior */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.bigger-card .card-body {
+  padding: 40px; /* Aumenta el padding del cuerpo de la tarjeta */
+}

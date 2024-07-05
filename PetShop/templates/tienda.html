@@ -1,0 +1,44 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<div id="tienda">
+    <h2>Tienda</h2>
+    <!-- Submenú de Categorías -->
+    <nav class="nav" id="categorias">
+        <a class="nav-link" href="?categoria=Gato" data-categoria="Gato">Gato</a>
+        <a class="nav-link" href="?categoria=Perro" data-categoria="Perro">Perro</a>
+    </nav>
+    <div id="productos" class="row">
+        {% for producto in productos %}
+            <div class="card mb-3 col-md-6" style="width: 18rem;" data-categoria="{{ producto.id_category }}">
+                <img src="{{ producto.imagen }}" class="card-img-top" alt="{{ producto.nombre }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ producto.nombre }}</h5>
+                    <button type="button" class="btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal{{ forloop.counter }}">
+                        Ver Producto
+                    </button>
+                    <div class="modal fade" id="exampleModal{{ forloop.counter }}" tabindex="-1" aria-labelledby="exampleModalLabel{{ forloop.counter }}" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-5" id="exampleModalLabel{{ forloop.counter }}">{{ producto.nombre }}</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="{{ producto.imagen }}" class="img-fluid" alt="{{ producto.nombre }}">
+                                    <p>{{ producto.descripcion }}</p>
+                                    <h2>${{ producto.precio }}</h2>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn-custom" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
