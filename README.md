@@ -92,7 +92,6 @@ Instrucciones para configurar el proyecto localmente.
 7. Crear super Usuario para gestion de usuarios
    ```bash
    python manage.py createsuperuser 
-python manage.py createsuperuser
 
 8. Corremos el Server.
    ```bash
