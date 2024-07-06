@@ -89,7 +89,11 @@ Instrucciones para configurar el proyecto localmente.
    ```bash
    python load_donaciones.py
    python load_productos.py
+7. Crear super Usuario para gestion de usuarios
+   ```bash
+   python manage.py createsuperuser 
+python manage.py createsuperuser
 
-5. Corremos el Server.
+8. Corremos el Server.
    ```bash
    python manage.py runserver
